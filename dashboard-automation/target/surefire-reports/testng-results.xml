@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="32894" started-at="2023-07-29T02:42:03 NPT" finished-at="2023-07-29T02:42:36 NPT">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="32894" started-at="2023-07-29T02:42:03 NPT" finished-at="2023-07-29T02:42:36 NPT">
+      <class name="com.cabtm.tests.DashboardTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.cabtm.tests.DashboardTest@544fe44c]" name="setUp" is-config="true" duration-ms="3253" started-at="2023-07-29T02:42:03 NPT" finished-at="2023-07-29T02:42:07 NPT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLoginAndWelcomeMessage()[pri:0, instance:com.cabtm.tests.DashboardTest@544fe44c]" name="testLoginAndWelcomeMessage" duration-ms="28153" started-at="2023-07-29T02:42:07 NPT" finished-at="2023-07-29T02:42:35 NPT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginAndWelcomeMessage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cabtm.tests.DashboardTest@544fe44c]" name="tearDown" is-config="true" duration-ms="1462" started-at="2023-07-29T02:42:35 NPT" finished-at="2023-07-29T02:42:36 NPT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cabtm.tests.DashboardTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
