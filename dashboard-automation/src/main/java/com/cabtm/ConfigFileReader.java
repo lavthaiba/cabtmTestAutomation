@@ -10,8 +10,10 @@ public class ConfigFileReader {
 
     public ConfigFileReader() {
         try {
+        	String projectDir = System.getProperty("user.dir");
+        	String configBrowser = projectDir + "/src/test/resources/config.properties";
             properties = new Properties();
-            FileInputStream fileInputStream = new FileInputStream("src/test/resources/config.properties");
+            FileInputStream fileInputStream = new FileInputStream(configBrowser);
             properties.load(fileInputStream);
         } catch (IOException e) {
             e.printStackTrace();

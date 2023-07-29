@@ -28,7 +28,9 @@ public class BaseTest {
                 driver = new ChromeDriver();
                 break;
             case FIREFOX:
-                System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver.exe");
+            	String projectDir = System.getProperty("user.dir");
+            	String geckoDriverPath = projectDir + "/src/test/resources/geckodriver.exe";
+                System.setProperty("webdriver.gecko.driver", geckoDriverPath);
                 driver = new FirefoxDriver();
                 break;
             default:

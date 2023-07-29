@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="32894" started-at="2023-07-29T02:42:03 NPT" finished-at="2023-07-29T02:42:36 NPT">
+  <suite started-at="2023-07-29T15:38:25 NPT" name="Surefire suite" finished-at="2023-07-29T15:39:02 NPT" duration-ms="37667">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="32894" started-at="2023-07-29T02:42:03 NPT" finished-at="2023-07-29T02:42:36 NPT">
+    <test started-at="2023-07-29T15:38:25 NPT" name="Surefire test" finished-at="2023-07-29T15:39:02 NPT" duration-ms="37667">
       <class name="com.cabtm.tests.DashboardTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.cabtm.tests.DashboardTest@544fe44c]" name="setUp" is-config="true" duration-ms="3253" started-at="2023-07-29T02:42:03 NPT" finished-at="2023-07-29T02:42:07 NPT">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cabtm.tests.DashboardTest@5c671d7f]" started-at="2023-07-29T15:38:25 NPT" name="setUp" finished-at="2023-07-29T15:38:29 NPT" duration-ms="3853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testLoginAndWelcomeMessage()[pri:0, instance:com.cabtm.tests.DashboardTest@544fe44c]" name="testLoginAndWelcomeMessage" duration-ms="28153" started-at="2023-07-29T02:42:07 NPT" finished-at="2023-07-29T02:42:35 NPT">
+        <test-method signature="testLoginAndWelcomeMessage()[pri:0, instance:com.cabtm.tests.DashboardTest@5c671d7f]" started-at="2023-07-29T15:38:29 NPT" name="testLoginAndWelcomeMessage" finished-at="2023-07-29T15:39:01 NPT" duration-ms="32330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginAndWelcomeMessage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cabtm.tests.DashboardTest@544fe44c]" name="tearDown" is-config="true" duration-ms="1462" started-at="2023-07-29T02:42:35 NPT" finished-at="2023-07-29T02:42:36 NPT">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cabtm.tests.DashboardTest@5c671d7f]" started-at="2023-07-29T15:39:01 NPT" name="tearDown" finished-at="2023-07-29T15:39:02 NPT" duration-ms="1459" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.cabtm.tests.DashboardTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>
