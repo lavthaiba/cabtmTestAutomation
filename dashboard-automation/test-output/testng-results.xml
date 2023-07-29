@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-29T15:58:31 NPT" name="Default suite" finished-at="2023-07-29T15:58:41 NPT" duration-ms="9903">
+  <suite started-at="2023-07-29T16:56:08 NPT" name="Default suite" finished-at="2023-07-29T16:56:20 NPT" duration-ms="11927">
     <groups>
     </groups>
-    <test started-at="2023-07-29T15:58:31 NPT" name="Default test" finished-at="2023-07-29T15:58:41 NPT" duration-ms="9903">
+    <test started-at="2023-07-29T16:56:08 NPT" name="Default test" finished-at="2023-07-29T16:56:20 NPT" duration-ms="11927">
       <class name="com.cabtm.tests.DashboardTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cabtm.tests.DashboardTest@67c33749]" started-at="2023-07-29T15:58:31 NPT" name="setUp" finished-at="2023-07-29T15:58:34 NPT" duration-ms="2611" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cabtm.tests.DashboardTest@67c33749]" started-at="2023-07-29T16:56:08 NPT" name="setUp" finished-at="2023-07-29T16:56:11 NPT" duration-ms="2888" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginAndWelcomeMessage()[pri:0, instance:com.cabtm.tests.DashboardTest@67c33749]" started-at="2023-07-29T15:58:34 NPT" name="testLoginAndWelcomeMessage" finished-at="2023-07-29T15:58:40 NPT" duration-ms="5878" status="PASS">
+        <test-method signature="testLoginAndWelcomeMessage()[pri:0, instance:com.cabtm.tests.DashboardTest@67c33749]" started-at="2023-07-29T16:56:11 NPT" name="testLoginAndWelcomeMessage" finished-at="2023-07-29T16:56:17 NPT" duration-ms="6073" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginAndWelcomeMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cabtm.tests.DashboardTest@67c33749]" started-at="2023-07-29T15:58:40 NPT" name="tearDown" finished-at="2023-07-29T15:58:41 NPT" duration-ms="1384" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cabtm.tests.DashboardTest@67c33749]" started-at="2023-07-29T16:56:17 NPT" name="tearDown" finished-at="2023-07-29T16:56:20 NPT" duration-ms="2936" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -1,7 +1,8 @@
 package com.cabtm;
 
-import java.io.FileInputStream;
+
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 public class ConfigFileReader {
@@ -10,11 +11,13 @@ public class ConfigFileReader {
 
     public ConfigFileReader() {
         try {
-        	String projectDir = System.getProperty("user.dir");
-        	String configBrowser = projectDir + "/src/test/resources/config.properties";
             properties = new Properties();
-            FileInputStream fileInputStream = new FileInputStream(configBrowser);
-            properties.load(fileInputStream);
+            // Load the config.properties file using resource loading
+            InputStream inputStream = ConfigFileReader.class.getResourceAsStream("/config.properties");
+            if (inputStream == null) {
+                throw new IllegalArgumentException("config.properties file not found.");
+            }
+            properties.load(inputStream);
         } catch (IOException e) {
             e.printStackTrace();
         }

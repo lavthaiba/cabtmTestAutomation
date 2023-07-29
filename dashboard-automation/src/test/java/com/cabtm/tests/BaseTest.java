@@ -24,12 +24,13 @@ public class BaseTest {
         // Set up WebDriver based on the browser choice
         switch (browserChoice) {
             case CHROME:
-                System.setProperty("webdriver.chrome.driver", "src/test/resources/chrome.exe");
+                // Uncomment the line below if you are using a custom path for chromedriver
+                // System.setProperty("webdriver.chrome.driver", getResourcePath("/chromedriver.exe"));
                 driver = new ChromeDriver();
                 break;
             case FIREFOX:
-            	String projectDir = System.getProperty("user.dir");
-            	String geckoDriverPath = projectDir + "/src/test/resources/geckodriver.exe";
+                // Uncomment the line below if you are using a custom path for geckodriver
+                String geckoDriverPath = getResourcePath("/geckodriver.exe");
                 System.setProperty("webdriver.gecko.driver", geckoDriverPath);
                 driver = new FirefoxDriver();
                 break;
@@ -46,5 +47,10 @@ public class BaseTest {
         if (driver != null) {
             driver.quit();
         }
+    }
+
+    private String getResourcePath(String resourceName) {
+        // Use resource loading to get the absolute path of the resource
+        return BaseTest.class.getResource(resourceName).getPath();
     }
 }
