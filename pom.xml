@@ -25,11 +25,18 @@
         <version>3.141.59</version>
     </dependency>
 
-  
-</dependencies>
- <properties>
+  <!-- ExtentReports -->
+	<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.6</version>
+    <scope>test</scope>
+	</dependency>
+
+	</dependencies>
+ 	<properties>
     <!-- ... other properties ... -->
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-</properties>
+	</properties>
 </project>

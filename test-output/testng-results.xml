@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-30T01:48:04 NPT" name="Default suite" finished-at="2023-07-30T01:48:12 NPT" duration-ms="7611">
+    <groups>
+    </groups>
+    <test started-at="2023-07-30T01:48:04 NPT" name="Default test" finished-at="2023-07-30T01:48:12 NPT" duration-ms="7611">
+      <class name="com.cabtm.tests.DashboardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cabtm.tests.DashboardTest@7205765b]" started-at="2023-07-30T01:48:04 NPT" name="setUp" finished-at="2023-07-30T01:48:07 NPT" duration-ms="3156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpTestData()[pri:0, instance:com.cabtm.tests.DashboardTest@7205765b]" started-at="2023-07-30T01:48:07 NPT" name="setUpTestData" finished-at="2023-07-30T01:48:07 NPT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTestData -->
+        <test-method signature="testLoginAndWelcomeMessage()[pri:0, instance:com.cabtm.tests.DashboardTest@7205765b]" started-at="2023-07-30T01:48:07 NPT" name="testLoginAndWelcomeMessage" finished-at="2023-07-30T01:48:11 NPT" duration-ms="3338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginAndWelcomeMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cabtm.tests.DashboardTest@7205765b]" started-at="2023-07-30T01:48:11 NPT" name="tearDown" finished-at="2023-07-30T01:48:12 NPT" duration-ms="1072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cabtm.tests.DashboardTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

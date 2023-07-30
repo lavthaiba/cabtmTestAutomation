@@ -5,7 +5,10 @@
     <classes>
       <class name="com.cabtm.tests.DashboardTest">
         <methods>
+          <include name="setUpTestData"/>
+          <include name="tearDownTest"/>
           <include name="testLoginAndWelcomeMessage"/>
+          <include name="setUpTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

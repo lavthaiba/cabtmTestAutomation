@@ -25,7 +25,7 @@ public class BaseTest {
         switch (browserChoice) {
             case CHROME:
                 // Uncomment the line below if you are using a custom path for chromedriver
-                // System.setProperty("webdriver.chrome.driver", getResourcePath("/chromedriver.exe"));
+                System.setProperty("webdriver.chrome.driver", getResourcePath("/chromedriver.exe"));
                 driver = new ChromeDriver();
                 break;
             case FIREFOX:

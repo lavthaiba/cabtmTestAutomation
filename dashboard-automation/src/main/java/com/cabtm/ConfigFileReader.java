@@ -1,6 +1,5 @@
 package com.cabtm;
 
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -23,6 +22,25 @@ public class ConfigFileReader {
         }
     }
 
+    public String getBaseURL() {
+        return getProperty("baseURL");
+    }
+
+    public String getUsername() {
+        return getProperty("username");
+    }
+
+    public String getPassword() {
+        return getProperty("password");
+    }
+    private String getProperty(String propertyName) {
+        String propertyValue = properties.getProperty(propertyName);
+        if (propertyValue == null) {
+            throw new IllegalArgumentException("Property not found: " + propertyName);
+        }
+        return propertyValue;
+    }
+    
     public BrowserChoice getBrowserChoice() {
         String browserChoice = properties.getProperty("browser");
         return BrowserChoice.fromString(browserChoice);
