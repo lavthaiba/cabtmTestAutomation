@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Cabtm Dashboard Test Suite" parallel="false">
+    <test name="Regression Test">
+        <classes>
+            <class name="com.cabtm.tests.LoginTest" />
+            <class name="com.cabtm.tests.DashboardPageTest" />
+            <!-- Add other test classes here if you have more -->
+        </classes>
+    </test>
+</suite>
