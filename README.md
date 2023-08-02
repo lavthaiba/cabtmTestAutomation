@@ -75,7 +75,7 @@ Before running the test scripts, you need to set up the configuration files with
 ## Running Tests
 To run the test scripts, use the following command:
 
-mvn test
+`mvn test`
 
 The test scripts will execute in the selected browser (Chrome or Firefox) as specified in the config.properties file.
 
