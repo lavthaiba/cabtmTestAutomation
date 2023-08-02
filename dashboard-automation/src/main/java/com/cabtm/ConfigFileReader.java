@@ -12,11 +12,17 @@ public class ConfigFileReader {
         try {
             properties = new Properties();
             // Load the config.properties file using resource loading
-            InputStream inputStream = ConfigFileReader.class.getResourceAsStream("/config.properties");
-            if (inputStream == null) {
+            InputStream configInputStream = ConfigFileReader.class.getResourceAsStream("/config.properties");
+            if (configInputStream == null) {
                 throw new IllegalArgumentException("config.properties file not found.");
             }
-            properties.load(inputStream);
+            properties.load(configInputStream);
+
+            // Load the secrets.properties file using resource loading
+            InputStream secretsInputStream = ConfigFileReader.class.getResourceAsStream("/secrets.properties");
+            if (secretsInputStream != null) {
+                properties.load(secretsInputStream);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -33,17 +39,18 @@ public class ConfigFileReader {
     public String getPassword() {
         return getProperty("password");
     }
+
+    public BrowserChoice getBrowserChoice() {
+        String browserChoice = getProperty("browser");
+        return BrowserChoice.fromString(browserChoice);
+    }
+
     private String getProperty(String propertyName) {
         String propertyValue = properties.getProperty(propertyName);
         if (propertyValue == null) {
             throw new IllegalArgumentException("Property not found: " + propertyName);
         }
         return propertyValue;
-    }
-    
-    public BrowserChoice getBrowserChoice() {
-        String browserChoice = properties.getProperty("browser");
-        return BrowserChoice.fromString(browserChoice);
     }
 
     public enum BrowserChoice {
