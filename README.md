@@ -71,9 +71,9 @@ Download the appropriate WebDriver executable (chromedriver or geckodriver) for 
 
 Before running the test scripts, you need to set up the configuration files with the required test data.
 
-**config.properties:** This file contains the base URL of the Cabtm application and other configuration settings. Update the baseURL, username, and password properties with the appropriate values.
+**config.properties:** This file contains the base URL of the Cabtm application and other configuration settings. Update the baseURL={desiredURL}, and browser={desiredBrowser} all in lowercase. This file resides on ../test/resources/config.properties 
 
-**secrets.properties:** This file is used to store sensitive information like passwords or API keys. Add the sensitive information, such as the username and password, to this file. And this is handled by .gitignore for not providing permission to clone this file.
+**secrets.properties:** This file is used to store sensitive information like passwords or API keys. Add the sensitive information, such as the username and password, to this file. And this is handled by .gitignore for not providing permission to clone this file. Create new file named "secrets.properties" or update the username={yourUsername} and password={yourPassword} all in lowercase. This file also resides on ../test/resources/secrets.properties 
 
 ...
 
