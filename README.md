@@ -3,13 +3,9 @@ This is a robust and maintainable test automation framework designed using the P
 
 **Key Features:**
 **Modular Architecture:** The framework follows a modular architecture, dividing the test code into separate modules or classes. Each module represents different parts of the application or specific test scenarios, making the code more organized and easier to maintain.
-
 **Page Object Model (POM):** The framework adheres to the principles of the Page Object Model design pattern. Each web page in the application is represented as a Page Object, encapsulating the page's elements and functionalities. Test scripts interact with these Page Objects to perform actions and validations, promoting code reusability and reducing maintenance efforts.
-
 **TestNG Testing Framework:** TestNG is the testing framework of choice for this automation framework. It allows for easy test configuration, parallel test execution, and better reporting. ExtentReports is integrated into TestNG to provide detailed and visually appealing test reports.
-
 **Configurable Test Data:** The framework allows test data to be easily managed and configured through the config.properties file. The use of properties files ensures that sensitive data, such as URLs, usernames, and passwords, are securely managed.
-
 **Test Scripts:**
 **LoginTest:** This test script verifies the login functionality of the application. It uses the Dashboard class to perform the login action and validate the welcome message displayed upon successful login.
 
