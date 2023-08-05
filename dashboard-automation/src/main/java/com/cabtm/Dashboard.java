@@ -15,7 +15,6 @@ public class Dashboard {
     private By loginButtonLocator = By.cssSelector("button[type='submit']");
     private By systemDashboardLinkLocator = By.xpath("//span[contains(text(),'System Dashboard')]");
     
-
     public Dashboard(WebDriver driver) {
         this.driver = driver;
     }

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.cabtm.tests.DashboardPageTest">
+      <class name="com.cabtm.tests.DataDrivenLoginTest">
         <methods>
           <include name="setUp"/>
-          <include name="testVerifySystemDashboardSections"/>
+          <include name="testLoginAndWelcomeMessage" invocation-numbers="3 4 5"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.cabtm.tests.DashboardPageTest -->
+      </class> <!-- com.cabtm.tests.DataDrivenLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

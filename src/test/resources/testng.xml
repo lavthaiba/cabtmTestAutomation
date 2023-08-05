@@ -4,6 +4,7 @@
         <classes>
             <class name="com.cabtm.tests.LoginTest" />
             <class name="com.cabtm.tests.DashboardPageTest" />
+            <class name="com.cabtm.tests.DataDrivenLoginTest" />
             <!-- Add other test classes here if you have more -->
         </classes>
     </test>

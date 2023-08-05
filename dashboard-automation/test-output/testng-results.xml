@@ -1,39 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-01T18:53:37 NPT" name="Cabtm Dashboard Test Suite" finished-at="2023-08-01T18:53:51 NPT" duration-ms="14819">
+  <suite started-at="2023-08-05T11:29:10 NPT" name="Default suite" finished-at="2023-08-05T11:30:01 NPT" duration-ms="50304">
     <groups>
     </groups>
-    <test started-at="2023-08-01T18:53:37 NPT" name="Regression Test" finished-at="2023-08-01T18:53:51 NPT" duration-ms="14819">
-      <class name="com.cabtm.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cabtm.tests.LoginTest@7daa0fbd]" started-at="2023-08-01T18:53:37 NPT" name="setUp" finished-at="2023-08-01T18:53:40 NPT" duration-ms="2976" status="PASS">
+    <test started-at="2023-08-05T11:29:10 NPT" name="Default test" finished-at="2023-08-05T11:30:01 NPT" duration-ms="50304">
+      <class name="com.cabtm.tests.DataDrivenLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:10 NPT" name="setUp" finished-at="2023-08-05T11:29:13 NPT" duration-ms="2942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginAndWelcomeMessage()[pri:0, instance:com.cabtm.tests.LoginTest@7daa0fbd]" started-at="2023-08-01T18:53:40 NPT" name="testLoginAndWelcomeMessage" finished-at="2023-08-01T18:53:42 NPT" duration-ms="2903" status="PASS">
+        <test-method signature="testLoginAndWelcomeMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:13 NPT" name="testLoginAndWelcomeMessage" data-provider="loginTestData" finished-at="2023-08-05T11:29:16 NPT" duration-ms="3058" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cabtm123@]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Cabtm Nepal]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginAndWelcomeMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cabtm.tests.LoginTest@7daa0fbd]" started-at="2023-08-01T18:53:42 NPT" name="tearDown" finished-at="2023-08-01T18:53:44 NPT" duration-ms="1294" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:16 NPT" name="tearDown" finished-at="2023-08-05T11:29:19 NPT" duration-ms="2808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.cabtm.tests.LoginTest -->
-      <class name="com.cabtm.tests.DashboardPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cabtm.tests.DashboardPageTest@5ef5c734]" started-at="2023-08-01T18:53:44 NPT" name="setUp" finished-at="2023-08-01T18:53:46 NPT" duration-ms="2712" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:19 NPT" name="setUp" finished-at="2023-08-05T11:29:23 NPT" duration-ms="3582" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testVerifySystemDashboardSections()[pri:0, instance:com.cabtm.tests.DashboardPageTest@5ef5c734]" started-at="2023-08-01T18:53:46 NPT" name="testVerifySystemDashboardSections" finished-at="2023-08-01T18:53:50 NPT" duration-ms="3424" status="PASS">
+        <test-method signature="testLoginAndWelcomeMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:23 NPT" name="testLoginAndWelcomeMessage" data-provider="loginTestData" finished-at="2023-08-05T11:29:26 NPT" duration-ms="2785" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cdg]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Admin not found]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testVerifySystemDashboardSections -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cabtm.tests.DashboardPageTest@5ef5c734]" started-at="2023-08-01T18:53:50 NPT" name="tearDown" finished-at="2023-08-01T18:53:51 NPT" duration-ms="1482" status="PASS">
+        </test-method> <!-- testLoginAndWelcomeMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:26 NPT" name="tearDown" finished-at="2023-08-05T11:29:27 NPT" duration-ms="1563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.cabtm.tests.DashboardPageTest -->
-    </test> <!-- Regression Test -->
-  </suite> <!-- Cabtm Dashboard Test Suite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:27 NPT" name="setUp" finished-at="2023-08-05T11:29:30 NPT" duration-ms="2917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginAndWelcomeMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:30 NPT" name="testLoginAndWelcomeMessage" data-provider="loginTestData" finished-at="2023-08-05T11:29:35 NPT" duration-ms="4564" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdfsdf]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Access Denied]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginAndWelcomeMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:35 NPT" name="tearDown" finished-at="2023-08-05T11:29:36 NPT" duration-ms="1654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:36 NPT" name="setUp" finished-at="2023-08-05T11:29:39 NPT" duration-ms="2689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginAndWelcomeMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:39 NPT" name="testLoginAndWelcomeMessage" data-provider="loginTestData" finished-at="2023-08-05T11:29:43 NPT" duration-ms="3856" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cabtm123@]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please fill out this field.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginAndWelcomeMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:43 NPT" name="tearDown" finished-at="2023-08-05T11:29:44 NPT" duration-ms="976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:44 NPT" name="setUp" finished-at="2023-08-05T11:29:46 NPT" duration-ms="2644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginAndWelcomeMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:46 NPT" name="testLoginAndWelcomeMessage" data-provider="loginTestData" finished-at="2023-08-05T11:29:50 NPT" duration-ms="3870" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev@admin.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please fill out this field.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginAndWelcomeMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:50 NPT" name="tearDown" finished-at="2023-08-05T11:29:51 NPT" duration-ms="1045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:51 NPT" name="setUp" finished-at="2023-08-05T11:29:55 NPT" duration-ms="3193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginAndWelcomeMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:55 NPT" name="testLoginAndWelcomeMessage" data-provider="loginTestData" finished-at="2023-08-05T11:29:59 NPT" duration-ms="4076" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please fill out this field.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginAndWelcomeMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cabtm.tests.DataDrivenLoginTest@43b9fd5]" started-at="2023-08-05T11:29:59 NPT" name="tearDown" finished-at="2023-08-05T11:30:01 NPT" duration-ms="2047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cabtm.tests.DataDrivenLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
