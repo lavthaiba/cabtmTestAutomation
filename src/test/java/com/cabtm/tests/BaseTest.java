@@ -23,7 +23,7 @@ import com.cabtm.ConfigFileReader;
 public class BaseTest {
 
     protected WebDriver driver;
-    private ConfigFileReader configFileReader;
+    protected ConfigFileReader configFileReader;
     protected String baseURL;
     protected String username;
     protected String password;
