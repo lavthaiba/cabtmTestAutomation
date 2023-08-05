@@ -7,6 +7,8 @@
 
 **Page Object Model (POM):** The framework strictly adheres to the Page Object Model design pattern. Each web page in the application is represented as a Page Object, encapsulating the page's elements and functionalities. Test scripts interact with these Page Objects to perform actions and validations, promoting code reusability and reducing maintenance efforts.
 
+**Data-Driven Testing Approach:** The framework allows to execute the same test logic with different sets of input data, making your test cases more versatile and reducing the need for duplicating test code. So I have defined various test scenarios for login functionality, such as valid login, negative testing with incorrect credentials, and testing for empty username and password fields. By providing different sets of input data in the loginTestData() method, you are driving your test cases with multiple data combinations, which is the essence of data-driven testing.
+
 **TestNG Testing Framework:** TestNG is the testing framework of choice for this automation framework. It allows for easy test configuration, parallel test execution, and better reporting. ExtentReports is integrated into TestNG to provide detailed and visually appealing test reports.
 
 **Configurable Test Data:** The framework allows test data to be easily managed and configured through the config.properties file. The use of properties files ensures that sensitive data, such as URLs, usernames, and passwords, are securely managed.
